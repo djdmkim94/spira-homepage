@@ -6,10 +6,10 @@
 <title>Spira — Hire an AI CMO that runs your social 24/7</title>
 <style>
   :root {
-    --bg:#07080d; --bg-soft:#0d0f17; --panel:#11131d; --panel-2:#161927;
-    --line:rgba(255,255,255,0.08); --line-strong:rgba(255,255,255,0.16);
-    --txt:#f2f4fb; --txt-dim:#9aa1b6; --txt-faint:#6a7186;
-    --accent:#6c5cff; --accent-2:#21d4c4; --accent-glow:rgba(108,92,255,0.45);
+    --bg:#0a0a0a; --bg-soft:#111111; --panel:#161617; --panel-2:#1e1e1e;
+    --line:rgba(255,255,255,0.10); --line-strong:rgba(255,255,255,0.17);
+    --txt:#fafafa; --txt-dim:#a1a1aa; --txt-faint:#71717a;
+    --accent:#f47019; --accent-2:#ff8a3c; --accent-glow:rgba(244,112,25,0.45);
     --radius:18px; --maxw:1160px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -17,14 +17,14 @@
   body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  body::before{content:"";position:fixed;top:-30%;left:50%;width:1200px;height:1200px;transform:translateX(-50%);background:radial-gradient(circle at center,rgba(108,92,255,0.16),transparent 60%);pointer-events:none;z-index:0}
+  body::before{content:"";position:fixed;top:-30%;left:50%;width:1200px;height:1200px;transform:translateX(-50%);background:radial-gradient(circle at center,rgba(244,112,25,0.16),transparent 60%);pointer-events:none;z-index:0}
   section{position:relative;z-index:1}
 
   /* nav */
   header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(7,8,13,0.72);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
   .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-0.02em}
-  .logo-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-size:15px;font-weight:800;color:#07080d}
+  .logo-mark{width:30px;height:30px;display:block;flex:none}
   .nav-links{display:flex;align-items:center;gap:28px}
   .nav-links a{color:var(--txt-dim);font-size:14.5px;transition:color .15s}
   .nav-links a:hover{color:var(--txt)}
@@ -34,8 +34,8 @@
 
   /* buttons */
   .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15.5px;padding:14px 26px;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .12s,box-shadow .2s;font-family:inherit}
-  .btn-primary{background:linear-gradient(135deg,var(--accent),#8b7bff);color:#fff;box-shadow:0 0 0 1px rgba(108,92,255,0.4),0 14px 40px -12px var(--accent-glow)}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(108,92,255,0.6),0 20px 50px -12px var(--accent-glow)}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),#ff9a4d);color:#1a1002;box-shadow:0 0 0 1px rgba(244,112,25,0.4),0 14px 40px -12px var(--accent-glow)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(244,112,25,0.6),0 20px 50px -12px var(--accent-glow)}
   .btn-ghost{background:rgba(255,255,255,0.04);border-color:var(--line-strong);color:var(--txt)}
   .btn-ghost:hover{background:rgba(255,255,255,0.08)}
 
@@ -44,7 +44,7 @@
   .hero-grid{display:grid;grid-template-columns:1.02fr 0.98fr;gap:54px;align-items:center}
   .eyebrow{font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-2)}
   .hero h1{font-size:clamp(34px,4.6vw,56px);line-height:1.05;letter-spacing:-0.03em;font-weight:800;margin-top:16px}
-  .hero h1 .grad{background:linear-gradient(120deg,var(--accent-2),var(--accent) 60%,#b9aaff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero h1 .grad{background:linear-gradient(120deg,var(--accent-2),var(--accent) 58%,#ffb066);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .hero p.sub{font-size:18px;color:var(--txt-dim);max-width:520px;margin-top:22px}
   .hero-cta{display:flex;gap:13px;margin-top:30px;flex-wrap:wrap}
   .hero-note{margin-top:14px;font-size:13.5px;color:var(--txt-faint)}
@@ -54,7 +54,7 @@
   .demo-bar{display:flex;align-items:center;gap:7px;padding:4px 6px 12px}
   .demo-bar span{width:11px;height:11px;border-radius:50%;background:var(--line-strong)}
   .demo-bar .url{margin-left:10px;font-size:12px;color:var(--txt-faint);background:var(--bg-soft);padding:5px 12px;border-radius:6px;flex:1}
-  .demo-screen{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/10;background:radial-gradient(circle at 30% 20%,rgba(108,92,255,0.25),transparent 55%),radial-gradient(circle at 80% 90%,rgba(33,212,196,0.18),transparent 50%),var(--panel-2);display:grid;place-items:center;cursor:pointer}
+  .demo-screen{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/10;background:radial-gradient(circle at 30% 20%,rgba(244,112,25,0.25),transparent 55%),radial-gradient(circle at 80% 90%,rgba(255,138,60,0.18),transparent 50%),var(--panel-2);display:grid;place-items:center;cursor:pointer}
   .play{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,0.92);display:grid;place-items:center;transition:transform .15s;box-shadow:0 10px 40px rgba(0,0,0,0.5)}
   .demo-screen:hover .play{transform:scale(1.08)}
   .play::after{content:"";border-left:22px solid #07080d;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:5px}
@@ -92,7 +92,7 @@
   .feat .ico{font-size:24px}
   .feat h4{font-size:19px;margin:14px 0 9px;letter-spacing:-0.01em}
   .feat p{font-size:15px;color:var(--txt-dim)}
-  .feat .pillar{display:inline-block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-2);border:1px solid rgba(33,212,196,0.35);padding:3px 8px;border-radius:6px}
+  .feat .pillar{display:inline-block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-2);border:1px solid rgba(255,138,60,0.35);padding:3px 8px;border-radius:6px}
 
   /* big demo */
   .bigdemo{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -101,7 +101,7 @@
 
   /* lead magnet */
   .magnet{padding:96px 0}
-  .magnet-box{border:1px solid var(--line-strong);border-radius:26px;padding:56px 40px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(108,92,255,0.20),transparent 65%),var(--panel)}
+  .magnet-box{border:1px solid var(--line-strong);border-radius:26px;padding:56px 40px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(244,112,25,0.20),transparent 65%),var(--panel)}
   .magnet-box h2{font-size:clamp(28px,4vw,42px);letter-spacing:-0.025em;font-weight:800;max-width:680px;margin:0 auto}
   .magnet-box p{color:var(--txt-dim);font-size:18px;margin:18px auto 32px;max-width:540px}
   .magnet-form{display:flex;gap:12px;max-width:620px;margin:0 auto;flex-wrap:wrap}
@@ -149,7 +149,7 @@
 
   /* final */
   .final{text-align:center;padding:104px 0}
-  .final-box{border:1px solid var(--line-strong);border-radius:26px;padding:64px 32px;background:radial-gradient(circle at 50% 0%,rgba(108,92,255,0.22),transparent 65%),var(--panel)}
+  .final-box{border:1px solid var(--line-strong);border-radius:26px;padding:64px 32px;background:radial-gradient(circle at 50% 0%,rgba(244,112,25,0.22),transparent 65%),var(--panel)}
   .final h2{font-size:clamp(30px,4.5vw,48px);letter-spacing:-0.03em;line-height:1.08;max-width:680px;margin:0 auto;font-weight:800}
   .final p{color:var(--txt-dim);font-size:18px;margin:20px auto 34px;max-width:500px}
   .hero-cta.center-cta{justify-content:center}
@@ -183,12 +183,11 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a href="#" class="logo"><span class="logo-mark">S</span> Spira</a>
+    <a href="#" class="logo"><svg class="logo-mark" viewBox="0 0 548 548" xmlns="http://www.w3.org/2000/svg" aria-label="Spira"><circle cx="274" cy="274" r="274" fill="#151515"/><path d="M426 185.834V274.19H425.739V317.647L347.785 364.178L273.614 274.911L273.664 274.771L276.427 274.19H273.875V274.16L311.826 164.661H311.836L426 185.834Z" fill="#D85F12"/><path d="M425.999 185.835L311.836 164.662H311.826L273.874 143.019L234.472 120.544L273.874 98L425.999 185.835Z" fill="#F47019"/><path d="M273.874 274.16V274.191H273.864L273.874 274.16Z" fill="#F47019"/><path d="M273.664 274.771L273.614 274.911V274.19H276.427L273.664 274.771Z" fill="#F47019"/><path d="M425.739 317.647V362.546L372.141 393.5L273.614 450.381L347.785 364.178L425.739 317.647Z" fill="#5F2606"/><path d="M273.614 274.19V274.911L273.514 274.801L273.014 274.19H273.614Z" fill="#F47019"/><path d="M273.514 274.801L273.614 274.781L273.664 274.771" fill="#F47019"/><path d="M160.352 298.476V385.561L122 363.617V274.19H122.26V184.763L152.213 274.19L160.352 298.476Z" fill="#CC5411"/><path d="M347.784 364.178L273.613 450.381L222.168 420.939L160.351 385.561V298.476L222.168 285.542L273.513 274.801L273.613 274.911L347.784 364.178Z" fill="#8C3A0A"/><path d="M311.824 164.661L273.873 274.16L273.863 274.19H273.012L273.513 274.8L222.167 285.542L160.35 298.476L152.211 274.19L122.259 184.763L174.075 155.11L222.167 127.581L234.471 120.543L273.873 143.017L311.824 164.661Z" fill="#FF8A3C"/></svg> Spira</a>
     <nav class="nav-links" id="navLinks">
-      <a href="#how">How it works</a>
       <a href="#features">Features</a>
-      <a href="#try">See it on your brand</a>
-      <a href="#team">Team</a>
+      <a href="#how">Solutions</a>
+      <a href="#demo">Resources</a>
       <a href="#pricing">Pricing</a>
       <a href="#start" class="nav-cta">Start free</a>
     </nav>
@@ -214,6 +213,22 @@
       <a href="#demo" class="demo-screen">
         <div class="play"></div>
         <div class="demo-tag">▶ Watch an AI Influencer run a real account</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BIG DEMO (section two) -->
+<section class="bigdemo sec" id="demo">
+  <div class="wrap center">
+    <span class="eyebrow">See it in action</span>
+    <h2>Watch an AI Influencer run a real account.</h2>
+    <p class="lead center">Two minutes, start to finish: scouting a trend, generating the asset, scheduling the post, and reporting back.</p>
+    <div class="demo-frame">
+      <div class="demo-bar"><span></span><span></span><span></span><div class="url">spira.ai/demo</div></div>
+      <a href="#start" class="demo-screen" style="aspect-ratio:16/9;">
+        <div class="play"></div>
+        <div class="demo-tag">Product walkthrough · 2:04</div>
       </a>
     </div>
   </div>
@@ -281,22 +296,6 @@
         <p>Talk to your AI Influencer on Telegram or WhatsApp like a teammate. Ask for a post, a campaign, or a new workflow, and it builds and ships it.</p>
         <span class="pillar">Real infrastructure, not a wrapper</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- BIG DEMO -->
-<section class="bigdemo sec" id="demo">
-  <div class="wrap center">
-    <span class="eyebrow">See it in action</span>
-    <h2>Watch an AI Influencer run a real account.</h2>
-    <p class="lead center">Two minutes, start to finish: scouting a trend, generating the asset, scheduling the post, and reporting back.</p>
-    <div class="demo-frame">
-      <div class="demo-bar"><span></span><span></span><span></span><div class="url">spira.ai/demo</div></div>
-      <a href="#start" class="demo-screen" style="aspect-ratio:16/9;">
-        <div class="play"></div>
-        <div class="demo-tag">Product walkthrough · 2:04</div>
-      </a>
     </div>
   </div>
 </section>
@@ -459,7 +458,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-col">
-        <a href="#" class="logo"><span class="logo-mark">S</span> Spira</a>
+        <a href="#" class="logo"><svg class="logo-mark" viewBox="0 0 548 548" xmlns="http://www.w3.org/2000/svg" aria-label="Spira"><circle cx="274" cy="274" r="274" fill="#151515"/><path d="M426 185.834V274.19H425.739V317.647L347.785 364.178L273.614 274.911L273.664 274.771L276.427 274.19H273.875V274.16L311.826 164.661H311.836L426 185.834Z" fill="#D85F12"/><path d="M425.999 185.835L311.836 164.662H311.826L273.874 143.019L234.472 120.544L273.874 98L425.999 185.835Z" fill="#F47019"/><path d="M273.874 274.16V274.191H273.864L273.874 274.16Z" fill="#F47019"/><path d="M273.664 274.771L273.614 274.911V274.19H276.427L273.664 274.771Z" fill="#F47019"/><path d="M425.739 317.647V362.546L372.141 393.5L273.614 450.381L347.785 364.178L425.739 317.647Z" fill="#5F2606"/><path d="M273.614 274.19V274.911L273.514 274.801L273.014 274.19H273.614Z" fill="#F47019"/><path d="M273.514 274.801L273.614 274.781L273.664 274.771" fill="#F47019"/><path d="M160.352 298.476V385.561L122 363.617V274.19H122.26V184.763L152.213 274.19L160.352 298.476Z" fill="#CC5411"/><path d="M347.784 364.178L273.613 450.381L222.168 420.939L160.351 385.561V298.476L222.168 285.542L273.513 274.801L273.613 274.911L347.784 364.178Z" fill="#8C3A0A"/><path d="M311.824 164.661L273.873 274.16L273.863 274.19H273.012L273.513 274.8L222.167 285.542L160.35 298.476L152.211 274.19L122.259 184.763L174.075 155.11L222.167 127.581L234.471 120.543L273.873 143.017L311.824 164.661Z" fill="#FF8A3C"/></svg> Spira</a>
         <p class="foot-blurb">The AI agent operating system for social media. Raise and run a team of AI creators that scout, make, publish, and improve.</p>
       </div>
       <div class="foot-col">
